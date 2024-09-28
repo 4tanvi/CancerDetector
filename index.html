@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Cancer Detection System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="../WhatsAppImage.jpeg" class="logo" />
+        <h1>Cancer Detector</h1>
+      </header>
+
+      <main>
+        <section class="input-section">
+          <h2>Patient Data Input</h2>
+          <form id="dataForm">
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" required />
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required />
+
+            <label for="familyHistory">Family History (Yes/No):</label>
+            <input type="text" id="familyHistory" required />
+
+            <label for="genomicData">Genomic Data (e.g., mutations):</label>
+            <input type="text" id="genomicData" required />
+
+            <label for="imagingResult">Upload Imaging File:</label>
+            <input type="file" id="imagingFile" accept="image/*" required />
+
+            <button type="submit">Submit Data</button>
+          </form>
+        </section>
+
+        <section class="result-section" id="resultSection">
+          <h2>Assessment Result</h2>
+          <div id="resultOutput"></div>
+        </section>
+
+        <section class="prevention-section">
+          <h2>Cancer Prevention and Cures</h2>
+          <h3>Prevention Tips</h3>
+          <ul>
+            <li>
+              Maintain a healthy diet rich in fruits, vegetables, and whole
+              grains.
+            </li>
+            <li>
+              Engage in regular physical activity and maintain a healthy weight.
+            </li>
+            <li>Avoid tobacco use and limit alcohol consumption.</li>
+            <li>
+              Protect your skin from the sun by wearing sunscreen and protective
+              clothing.
+            </li>
+            <li>
+              Get regular screenings and vaccinations as recommended by your
+              healthcare provider.
+            </li>
+          </ul>
+
+          <h3>Cancer Cures</h3>
+          <ul>
+            <li>Surgery: Removal of the tumor and surrounding tissue.</li>
+            <li>Chemotherapy: Use of drugs to kill cancer cells.</li>
+            <li>
+              Radiation Therapy: Using high doses of radiation to kill cancer
+              cells.
+            </li>
+            <li>Immunotherapy: Helping your immune system fight cancer.</li>
+            <li>
+              Targeted Therapy: Targeting specific molecules involved in cancer
+              growth.
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 AI Cancer Detection System</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
